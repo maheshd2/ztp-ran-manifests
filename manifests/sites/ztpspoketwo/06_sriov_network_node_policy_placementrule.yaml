@@ -1,0 +1,9 @@
+apiVersion: apps.open-cluster-management.io/v1
+kind: PlacementRule
+metadata:
+  name: placement-ztpspoketwo-sriov-nnode-policy
+  namespace: ztpspoketwo-subscription
+spec:
+  clusterSelector:
+    matchExpressions:
+      - {key: name, operator: In, values: ["ztpspoketwo-cluster"]}

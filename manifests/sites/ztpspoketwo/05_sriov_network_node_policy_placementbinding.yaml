@@ -1,0 +1,13 @@
+apiVersion: policy.open-cluster-management.io/v1
+kind: PlacementBinding
+metadata:
+  name: ztpspoketwo-sriov-nnode-policy
+  namespace: ztpspoketwo-subscription
+placementRef:
+  name: placement-ztpspoketwo-sriov-nnode-policy
+  kind: PlacementRule
+  apiGroup: apps.open-cluster-management.io
+subjects:
+- name: ztpspoketwo-sriov-nnode-policy
+  kind: Policy
+  apiGroup: policy.open-cluster-management.io
